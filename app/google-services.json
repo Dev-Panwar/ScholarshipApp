@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "173435325689",
+    "project_id": "jecscholar-1dd3b",
+    "storage_bucket": "jecscholar-1dd3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173435325689:android:ab2d6d6b51304a71f62628",
+        "android_client_info": {
+          "package_name": "dev.panwar.scholarshipapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXW6chX61w0w1MJZa0eqHWFxrBcNVMbsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

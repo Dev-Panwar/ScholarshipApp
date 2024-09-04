@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_background"
+    tools:context=".activities.FundsActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+        android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:drawableStart="@drawable/ic_profile_back"
+        android:drawableTint="@color/black"
+        android:textStyle="bold"
+        android:text="Fund Balance"
+        android:textColor="@color/black"
+        android:textSize="26sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_funds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="30dp">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:background="@drawable/ic_background"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/fund_title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/authentication_screen_marginStartEnd"
+               android:layout_marginEnd="@dimen/authentication_screen_marginStartEnd"
+               android:layout_marginTop="20dp"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               android:textStyle="bold"
+               android:gravity="center"
+               android:text="Finance Department \n Funds "
+               android:textColor="@color/secondary_text_color"
+               android:textSize="28sp" />
+           
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cy_total"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/fund_title"
+               android:layout_marginTop="20dp"
+               android:elevation="5dp"
+               app:cardCornerRadius="10dp"
+               android:layout_marginHorizontal="20dp">
+               
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="15dp"
+                   android:gravity="center"
+                   android:orientation="vertical">
+                   
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Total Amount"
+                       android:textSize="22sp"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:id="@+id/tv_total_amount"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="₹5000000"
+                       android:textSize="22sp"
+                       android:textStyle="bold"
+                       android:textColor="@color/secondary_text_color"/>
+
+                   
+               </LinearLayout>
+               
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cv_santioned"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/cy_total"
+               android:layout_marginTop="20dp"
+               android:elevation="5dp"
+               app:cardCornerRadius="10dp"
+               android:layout_marginHorizontal="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="15dp"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Amount Sanctioned"
+                       android:textSize="22sp"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:id="@+id/tv_total_sanctioned"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="₹5000000"
+                       android:textSize="22sp"
+                       android:textStyle="bold"
+                       android:textColor="@color/secondary_text_color"/>
+
+
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cv_remaining"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/cv_santioned"
+               android:layout_marginTop="20dp"
+               android:elevation="5dp"
+               app:cardCornerRadius="10dp"
+               android:layout_marginHorizontal="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="15dp"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Amount Remaining"
+                       android:textSize="22sp"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:id="@+id/tv_total_remaining"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="₹5000000"
+                       android:textSize="22sp"
+                       android:textStyle="bold"
+                       android:textColor="@color/secondary_text_color"/>
+
+
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/cv_difference"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toBottomOf="@id/cv_remaining"
+               android:layout_marginTop="20dp"
+               android:elevation="5dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               android:layout_marginBottom="30dp"
+               app:cardCornerRadius="10dp"
+               android:layout_marginHorizontal="20dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="15dp"
+                   android:gravity="center"
+                   android:orientation="vertical">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Amount Difference"
+                       android:textSize="22sp"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"/>
+
+                   <TextView
+                       android:id="@+id/tv_total_difference"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="₹5000000"
+                       android:textSize="22sp"
+                       android:textStyle="bold"
+                       android:textColor="@color/secondary_text_color"/>
+
+
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
